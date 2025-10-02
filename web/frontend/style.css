@@ -1,0 +1,151 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F5F5F5;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("https://i.pinimg.com/1200x/f4/9a/5b/f49a5bbcefa352b47d44f7176ba91cc7.jpg") center/cover no-repeat;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(13, 27, 42, 0.7); /* azul oscuro */
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ================= FORM GENERAL ================= */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f7f9fc;
+}
+
+.form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.form-container input,
+.form-container select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border: 1px solid #C1121F;
+}
+
+/* Botón */
+.form-container button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #C1121F;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #a10e18;
+}
+
+/* ================= NAVBAR ================= */
+header.navbar {
+  background: #0D1B2A !important; /* azul oscuro */
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0D1B2A;
+  color: #fff;
+}
+
+/* ================= LOGIN ================= */
+body.bg-light {
+  background: #F5F5F5 !important; /* gris claro */
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  color: #C1121F; /* rojo SOLO ESTILO */
+}
+
+.text-primary {
+  color: #C1121F !important;
+}
+
+.text-secondary {
+  color: #0D1B2A !important;
+}
+
+.btn-primary {
+  background: #0D1B2A !important; /* azul oscuro */
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #1b2f4a !important;
+}
+
+.btn-success {
+  background: #C1121F !important; /* rojo SOLO ESTILO */
+  border: none;
+}
+
+.btn-success:hover {
+  background: #a10e18 !important;
+}

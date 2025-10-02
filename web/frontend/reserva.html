@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - SOLO ESTILO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Agendar tu cita en SOLO ESTILO</h1>
+  </header>
+
+  <main>
+    <form id="reservaForm" class="form-container">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+
+      <label for="servicio">Servicio</label>
+      <select id="servicio" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="Corte clásico">Corte clásico</option>
+        <option value="Fade / Degradado">Fade / Degradado</option>
+        <option value="Arreglo de barba">Arreglo de barba</option>
+        <option value="Corte + Barba">Corte + Barba</option>
+      </select>
+
+      <label for="hora">Hora de la cita</label>
+      <input type="time" id="hora" required>
+
+      <button type="submit">Reservar</button>
+    </form>
+
+    <p id="reservaMsg"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
